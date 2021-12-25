@@ -8,7 +8,7 @@ Mini Ecommerce web application using vanilla JS, Bootstrap, JQuery, JSON and W3.
   <li>Well detailed code</li>
   <li>Asynchronous fetching of data from JSON file</li>
   <li>Adding of item to cart</li>
-  <li>LocalStorage implementation for item avalaibilty even after page refresh</li>
+  <li>LocalStorage implementation for item availabilty even after page refresh</li>
   <li>Item quantity updater</li>
   <li>Item description page</li>
   <li>Item removal from cart</li>
