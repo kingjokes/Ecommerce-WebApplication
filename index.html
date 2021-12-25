@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="w3.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- scripts and stylesheets imports-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--end of import-->
+    <meta name="author" content="Paul Jokotagba">
+    <title>E-Commerce</title>
+    <style>
+        a{
+            text-decoration: none!important;
+        }
+    </style>
+
+</head>
+<body>
+<nav class="navbar w3-white w3-card-2 navbar-expand-sm  fixed-top"  >
+    <ul class=" navbar-nav ">
+        <li class="nav-item">
+            <a class="nav-link active w3-text-dark-gray " href="index.html">E-Commerce</a>
+        </li>
+
+
+        <li class="nav-item justify-content-right dropdown">
+            <a class="nav-link dropdown-toggle w3-text-dark-gray" data-toggle="dropdown" href="#">
+                Cart <span class="w3-badge" id="cart">0</span>
+            </a>
+            <div class="dropdown-menu" id="cart-list">
+                <a class="dropdown-item" href="#">No item found</a>
+
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="w3-padding-64">
+    <div class="row my-5">
+        <div class="col-12 col-sm-1 col-md-1 col-lg-1">
+            &nbsp;
+        </div>
+        <div class="col-12 col-sm-10 col-md-10 col-lg-10">
+
+            <!--div where content fetched are loaded into-->
+            <div class="row " id="response">
+
+                <!--loading is to show user data are being fetched and hides when data are loaded-->
+                <div id="loading" style="display:none" class="justify-content-center">
+                    <span >Fetching data.......</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--JS file in charge of actions across the page-->
+<script src="commerce.js"> </script>
+
+
+
+
+</body>
+</html>
