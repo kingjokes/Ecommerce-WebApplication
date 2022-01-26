@@ -270,7 +270,7 @@ const formatAmount= (nStr) =>{
 const linkExtractor = (link) =>{
     let extract = link.split('/')  //split link into array
     let lastElement = extract[extract.length-1]//grab the last element
-    let get = lastElement.indexOf('=') //grab text after the = mark
+    let get = lastElement.indexOf('=') //grab item after the = mark
     return get=== -1 ? null : lastElement.substring(get+1) //return null if no text exist or return the text
 
 }
